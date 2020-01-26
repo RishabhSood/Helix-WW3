@@ -1,0 +1,61 @@
+##The proble level of each node shows the minimum number rewuired to get to it, I'll probably change this later to show all numbers.
+
+#China invades and occupies Taiwan, a democratic U.S. partner and arms customer and forces its claim to the Senkaku Islands which US believes to be a part of Japan.
+#• Do you want to help Japan in their war against Chinese forces or do you want to attack them on another front?
+#• Japan help-
+#Your forces got annihilated and a lot of U.S. blood was lost(-500) though Chinese forces were successfully eradicated from Japan.
+#1) China threatens U.S. by getting involved in Afghanistan war.					
+#3) Russia supporting China against U.S. to assert their dominance over a nation which has humiliated them in the past.
+#4) U.S. tries to infiltrate the Chinese concentration camps but fails as China founds out their spies, gathers proof against U.S..
+#5) U.S. sends troops to release their captured spies but our found out by China and are executed. 
+#6) China thinks of this as an act of war as U.S. violated their sovereignity by infiltrating China and attacks U.S. military base in Pacific Ocean.
+#7)U.S. asks help from India because the Chinese attack was on joint Indian-U.S. bases. In the meantime Russian government gives their support to China due to which India backs down in supporting U.S. because of Russia being their all time ally.
+#8) Russia backs down from sending weapons to India at the last moment and sends them to Pakistan because of Chinese pressure. India finds this as a betrayal and allies itself with the U.S. cause.
+#9)U.S. has the choice to attack on Beijing or the Chinese military facility near Beijing.
+#10) If the U.S. attacks on the military facility, the world understands this is a fair retaliation on U.S.'s part on the other hand attack on Beijing is considered an acceleration by U.S. targetting innocent civilians and NATO countries and India back down citing that U.S. is taking world towards doom.
+#11) If India and NATO back down, Donald Trump being the insane person that he is decides to use nuclear weapons as the last resort, Japan being their ally gets the news of this and decides that they won't let what happened to Hiroshima and Nagasaki to happen again to some other country and leaks the information to China. China and Japan together assissinate Donald Trump and Russia takes control over the U.S. territory. 
+#12) U.S. is divided into two different countries and are made colonies of Russia and China and the World War ends with a complete defeat of U.S.
+#13) If India and NATO do not back down, U.S. decides to go in a frontal war with China and Russia but are crushed with a betrayal from Japan, but since India and NATO countries were with U.S., they prevent U.S. from losing their territory. Donald Trump is removed from his post by the Chinese government and put prison for crimes of war. Bernie Sanders is the new U.S. president. World war ends with the defeat of U.S. but they maintain their sovereignity.
+
+Nodes:{
+#####m_1_033::The Bear Attacks!::As you're preparing for your war with Russia, to settle which of you will rule this world, your intelligence services report that Russia has started an arms buildup along its European Borders.
+c_1_034::Backroom_meeting::You meet up with those who have the highest stake in the success of the US and try to decide what to do with this military buildup when you're still not ready.
+
+p_2_035::Is all fine, No need to panic!::You try to convince the room that this is all fine, and that you have things under control.
+m_2_036::Stiff Audience::Some of the more noconfrontational personalities agree but an old mainframe in the back makes allegations of incompetence, or worse, COLLUSION.
+p_3_037::Dratted Computers:: Defend yourself from this talking monitor which for some reason has more brains than the rest of the gathering combined.
+
+f_3_038::The wisdom of crowds::You stumble through your explanation but when the Mainframe tries to press his advantage, the others shout over him, calling him a worrywart and telling you to just get this sorted. 
+m_3_039::Caught Unawares *wink*::Russia attacks in the night......
+
+p_2_040::We must declare war... Yesterday!::You try to convince the gathering that the best course of action is to just start this battle more awaited than cleganebowl.
+
+c_2_041::Point of Attack::You resolve to meet Russia Head-on, choose where to attack.
+
+
+
+
+
+
+}
+
+Edges:{
+m_1_033 -> c_1_034;
+c_1_034 -> p_2_035;
+p_2_035 -> m_2_036;
+m_2_036 -> p_3_037;
+f_3_038 -> m_3_039;
+p_3_037 -> m_3_039;
+c_1_034 -> p_2_040;
+p_2_040 -> c_2_041;
+m_3_039 -> c_2_041;
+
+}
+
+Fails:{
+p_3_037 -f f_3_038;
+
+}
+
+#Ideas:
+#
