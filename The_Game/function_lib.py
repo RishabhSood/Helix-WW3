@@ -290,7 +290,7 @@ def load():
                     pygame.quit()
                     sys.exit()
     
-    display_text_animation("""MADLADS PRESENT""", 250, 100, (0,255,0), 30)
+    display_text_animation("""CCS PRESENTS""", 250, 100, (0,255,0), 30)
     display_text_animation("""WORLD WAR III """, 250, 100, (0,0,255), 30)
     display_text_animation("""You're Donald Trump, President of the US. """, 250, 100, WHITE, 10)
     display_text_animation(""" Your country is at odds with Iran, China, and Russia """, 250, 100, WHITE, 10)
