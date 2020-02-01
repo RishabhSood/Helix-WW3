@@ -1,0 +1,112 @@
+
+------------------------------------------------------------------------------------------
+Welcome to Path Iran
+------------------------------------------------------------------------------------------
+
+
+@Checkpoint Somewhere in Iran (050 pts), user score = 50
+
+------------------------------------------------------------------------------------------
+Welcome to Path Iran
+------------------------------------------------------------------------------------------
+
+
+@Checkpoint Somewhere in Iran (050 pts), user score = 50
+
+@Checkpoint Held Hostage... (300 pts), user score = 350
+
+------------------------------------------------------------------------------------------
+Welcome to Path Iran
+------------------------------------------------------------------------------------------
+
+
+@Checkpoint Somewhere in Iran (050 pts), user score = 50
+
+@Checkpoint Held Hostage... (300 pts), user score = 350
+
+@Checkpoint Plane Hijack (300 pts), user score = 650
+
++-----------------------------------------------------------------------------------------+
+
+------------------------------------------------------------------------------------------
+Welcome to Path Iran
+------------------------------------------------------------------------------------------
+
+
+@Checkpoint Somewhere in Iran (050 pts), user score = 50
+
+@Checkpoint Held Hostage... (300 pts), user score = 350
+
+@Checkpoint Convince The Supplier (200 pts), user score = 550
+
+@Checkpoint Formation (150 pts), user score = 700
+
+@Checkpoint Hide the files! (050 pts), user score = 750
+
++---------------------------------iran path fin-------------------------------------------
+
+------------------------------------------------------------------------------------------
+Welcome to Path Iran
+------------------------------------------------------------------------------------------
+
+
+@Checkpoint Somewhere in Iran (050 pts), user score = 50
+
+------------------------------------------------------------------------------------------
+Welcome to Path Iran
+------------------------------------------------------------------------------------------
+
+
+@Checkpoint Somewhere in Iran (050 pts), user score = 50
+
+@Checkpoint Held Hostage... (300 pts), user score = 350
+
+@Checkpoint Somewhere in Iran, user score = 850
+
+@Checkpoint One Chance, user score = 850
+
+@Checkpoint Secure their Network (800 pts), user score = 850
+
+@Checkpoint Trusty Old Farts (400 pts), user score = 1250
+
+@Checkpoint Iran Cyber Attack (100 pts), user score = 1350
+
+@Checkpoint Wire with Wire (100 pts), user score = 1450
+
+@Checkpoint War of the wizards (400 pts), user score = 1850
+
++---------------------------------iran path fin-------------------------------------------
+
+------------------------------------------------------------------------------------------
+Welcome to Path Iran
+------------------------------------------------------------------------------------------
+
+
+@Checkpoint Somewhere in Iran (050 pts), user score = 50
+
+@Checkpoint Held Hostage... (300 pts), user score = 350
+
+@Checkpoint Plane Hijack (300 pts), user score = 650
+
+@Checkpoint Secure their Network (800 pts), user score = 650
+
+@Checkpoint Trusty Old Farts (400 pts), user score = 1050
+
+@Checkpoint Iran Cyber Attack (100 pts), user score = 1150
+
+@Checkpoint Wire with Wire (100 pts), user score = 1250
+
+@Checkpoint War of the wizards (400 pts), user score = 1650
+
++---------------------------------iran path fin-------------------------------------------
+
+------------------------------------------------------------------------------------------
+Welcome to Path Iran
+------------------------------------------------------------------------------------------
+
+
+@Checkpoint Somewhere in Iran (050 pts), user score = 50
+
+@Checkpoint Held Hostage... (300 pts), user score = 350
+
+@Checkpoint Secure their Network (800 pts), user score = 850
