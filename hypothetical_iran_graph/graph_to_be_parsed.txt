@@ -1,0 +1,146 @@
+#"About to start here"
+#I'll let the id be char_digit_3DigitNumber, with the character representing type, and the last numbers being unique, all endings get 900 series numbers and letter e as char
+#For optional parameters, the first two letters after ::, which should be in uppercase, indicate type, CN, BG, FT (choice_name, background, font), f stands for failure messages
+#<id>::<name>::<<respective arguments>>;
+#you can alias, it will replicate all info with ===
+
+#class Message(Node):
+#    def __init__(self, id_, name, text, background = DEFAULT_BACKGROUND, font = DEFAULT_FONT): 2 Non-default arguments
+#        Node.__init__(self, id_, name)
+
+#class Problem(Node):
+#    #Remember to implement failure building in your graph building script
+#    def __init__(self, id_, name, question, answer, failure_node = False, 
+#                 background = DEFAULT_PROBLEM_BACKGROUND, font = DEFAULT_PROBLEM_FONT): 3 Non-default arguments
+
+#class Choice(Node):
+#    def __init__(self, id_, name, text): 2 Non-default arguments
+
+#RISHAB_LOOK_BELOW \|/
+
+Nodes:{
+#####m_0_001::WW3::You're Donald Trump, President of the US.Your country is at odds with Iran, China, and Russia, choose the path forward wisely.; Implemented directly as start node
+p_1_002::Start::
+c_1_003::Country::
+
+m_1_004::War with Iran::Iran attacks US military Bases in Iraq,retaliate.;
+p_2_005::Somewhere in Iran::1,150,000 people stand in a circle. One of them is an undercover agent. There is a sword in the hand of the 1st person, he kills the 2nd person and passes on the sword to the third, who kills the fourth and gives the sword to the 5th, this goes on until one person is left. At what position does the spy stand to survive?::10;
+c_2_006::Israel::Israel asks to join the war.; #Allow them or fight solo; #This necessitates choice nodes being ordered in reverse order of appearance #COuld just have choices'names be the options and nothing else;
+m_2_007::Israel Bombs Iraq::Some Israeli jets were shot down, but no american blood was lost.::CN:Accept; #Decide on choice iplementation after finishing with the text;
+c_2_008::Fight Solo::You attempt an invasion. Choose between frontal assault and a quick and dirty solution.;
+
+p_3_009::Red Wedding::Plan The Wedding, you are going to use chemical Weapons etc.;
+p_4_010::Execution::Execute the plan, screwing up now means all that preparation was for naught.;
+p_5_011::Tie Up Loose Ends::Hide your involvement, or risk loosing your victory being celebrated with your head coming off.
+e_5_901::Did what needed to be done::Rumours of the Horrible end of Iran's Monarchy are whispered, but none dare utter them publicly, to the bastion of freedom falls another country.
+e_5_902::Oops! Oh well..::Youre probably not going to win a second term in office, and the pesky lawers might press for war crime charges, but guess what, you won! And that's all that matters.
+
+p_3_012::Frontal War::You invade Iran, release the war eagles!;
+c_3_013::A Global Din::Your actions have come to the attention of the old men and women at the United Nations, not least because you couldn't kick out the Iranian Ambassador due to pesky international laws. They ask for an explanation, go with your experienced legal team, or Sgt. McBrass, the probably insane soldier who was caught tryin to enter the oval offfice this morning, asking to be allowed to set those peacemongers right with a speech he'd spent the last week on, which was "guaranteed to turn even the most unwarlike statesmen into a proponent of this war" in the sargeant's own words.; 
+
+m_3_014::The blind lead the deaf:: Sgt.McBrass prepare for his war of words, hopefully he'll his rationality will shine through the clouded minds of those emissaries of mostly useless nations.
+p_4_015::
+m_4_016::Military Charm::In a miracle others did not expect but you were sure would occur, Sgt.McBrass has managed to convince all manner of dignitaries from the Queen of England to the Princes of Nigeria that your cause is indeed just. The world stands behind you, forward march!
+f_4_017::Warrior-Man not know word magic::Sgt.mcBrass and you found yourselves alone(but together, *wink* *wink*) in being astounded after he was boo'ed of the podium after a speech that you considered an exemplary example of american spirit, "One for the History Books", as they say.
+
+p_4_018::Trusty Old Farts::Your wizened team of battle-hardened lawyers try their best to explain your mad cause to the rest of the world.
+m_4_019::Collusion::The old people have convinced the other old people through various under the table means to not interfere, there are some grumbles, but you've survived this imposition of needless bureaucracy on your freedom to blow up whoever you want.
+f_4_020::Russia has entered the chat::Your facade was seen through, with the heartless betrayal of your allies, Iran has managed to convince (read, given them what they want and paid for it too) Russia to join this war, to protect the "FREEDOM OF AUTOCRATIC RULE". Iran is inconsequential now, prepare to face the Winter Bear.
+#Remember to add edge to the Russian Graph Here.
+
+c_4_021::Cyber Iran::Having lost all hope from diplomacy, Iran has launched an attack on your digital foundations, a cryptic message on your secured phone, signed by "Your AI Overlords", asks you to exterminate all threats to their world order, you'd better handle this fast!;
+
+m_4_022::To hell with reason, to hell with the internet::You opt for guerilla warfare, no red-blooded american would bow to nerds across the world from them (as long as they're within ICBM range, just in case... *wink*) and no self-repecting human would ever take orders from a machine.You sling your greatsword on your back and march out of the white house, taking the fight to the streets of Tehran. 
+p_5_023::
+c_5_024::Victor's choice::Through sheer Americana, you've overwhelmed the enemy, as you strut into the Tehranian throne room, what will you do?
+
+e_5_903::The one in front of the gun lives forever::Declare your love for the heritage of Iran and your sadness at the destruction it has faced, as you drive your greatsword into the king's chest and american bombers raze the capital to the ground. #Mad dog victory
+e_5_904::Vassalize::Declare your love of, among other things, oil, and how you've always wanted a resort in Iran,you make the king kneel to you, overthrow congress, and become Emperor Donald Trump I of the United States of Iran and America.
+
+m_4_025::Fight Wire with Wire::You summon that peculiar mixture of young and old, pale as if they haven't seen the sun in decades, our Intelligence Service! The lives of our masters and our digital infrastructure now lies in their hands.
+p_5_026::
+c_5_027::Return Wire or Fire?::Having handled the initial onslaught fairly well, you'll now have to consider your means of counterattack carefully, your AI overlords are now asking you to counterattack, they won't be helping, the matters of mortals are obviously beneath them. Will you have your computer wizards go sleepless for a few more nights? Or will you believe in our troops?
+
+p_6_028::War of the Wizards::;
+c_6_029::Technological victory.... but wait, there's more?::Just when you've brought down the Iranian Intelligence Network, paving the way for a complete strategic victory, the Iranian princess comes begging for her country to you, asking for mercy,"Will you go down in history as a strong but just leader or as a tyrant who continued the legacy of his terrible predecessors, oppressing countries across the world, she asks?". 
+
+e_6_905::Shouldn't have trusted anyone::As you pause to consider her situation, she approaches you and tears your throat open with her previously hidden reptilian claws, you saw your chief-of-staff enter the room with a strange smirk as you watch him transform into a half-lizard abomination, the Cabal, you think as you die.::CN:Consider her point;
+e_6_906::Lock Her Up!::You have her locked up, and your glorious victory over Iran results in a landslide victory in the re-elections. The minstrels will sing of your wisdom and you'll die old in bed, peacefully, unless the world order changes significantly.
+
+p_6_030::Forward, glorious death!::You believe in our troops and give them the chance to savour the ashen taste of victory.
+m_6_031::Pyrrhic Victory::You've won the war, but at great cost of american life, you now face impeachment and possibly prison for your terrible handling of the situation.
+p_7_032::
+e_7_907::God Bless America::You save your office but lose the reelection, your ex chief-of-staff runs against you and wins, you live to see the day of the reptilian asssault and are eaten alive.
+e_7_908::Omae Wa Mou Shindeiru::You are impeached and sentenced to be sent off to the farm, when you are released at the farm, taking your first breath of nature in a long time, a man in crimson telports behind you and kills you. 
+
+#Russia
+m_1_033::The Bear Attacks!::Yeah,yeah, Russia.
+
+}
+
+Edges:{
+m_0_001 -> p_1_002;
+p_1_002 -> c_1_003;
+c_1_003 -> m_1_004;
+m_1_004 -> p_2_005;
+p_2_005 -> c_2_006;
+
+c_2_006 -> m_2_007;
+c_2_006 -> c_2_008;
+c_2_008 -> p_3_009;
+p_3_009 -> p_4_010;
+p_4_010 -> p_5_011;
+p_5_011 -> e_5_901;
+
+c_2_008 -> p_3_012;
+m_2_007 -> p_3_012;
+p_3_012 -> c_3_013;
+
+c_3_013 -> m_3_014;
+m_3_014 -> p_4_015;
+p_4_015 -> m_4_016;
+
+c_3_013 -> p_4_018;
+f_4_017 -> p_4_018;
+p_4_018 -> m_4_019;
+
+m_4_016 -> c_4_021;
+m_4_019 -> c_4_021;
+
+#f_4_020 -> Point in Russia Graph
+
+c_4_021 -> m_4_022;
+m_4_022 -> p_5_023;
+p_5_023 -> c_5_024;
+c_5_024 -> e_5_903;
+c_5_024 -> e_5_904;
+
+c_4_021 -> m_4_025;
+m_4_025 -> p_5_026;
+p_5_026 -> c_5_027;
+
+c_5_027 -> p_6_028;
+p_6_028 -> c_6_029;
+c_6_029 -> e_6_905;
+c_6_029 -> e_6_906;
+
+c_5_027 -> p_6_030;
+p_6_030 -> m_6_031;
+m_6_031 -> p_7_032;
+p_7_032 -> e_7_907;
+
+#Russian first edge
+c_1_003 -> m_1_033; 
+
+}
+
+Fails:{
+p_3_009 -f p_3_012;
+p_4_010 -f p_3_012;
+p_5_011 -f e_5_902;
+p_4_015 -f f_4_017;
+p_4_018 -f f_4_020;
+p_7_032 -f e_7_908;
+
+}
+
