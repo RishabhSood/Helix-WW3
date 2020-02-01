@@ -133,7 +133,7 @@ Q7. Function:
 	Ans: 16276736
 
 Q8. Function:UN_Moderate
-	Points:
+	Points:400
 	Title:Trusty Old Farts
 	Content:Your explanation was rejected, it's now time to send in your time-tested lawyers
 
@@ -146,14 +146,14 @@ Q8. Function:UN_Moderate
 	Ans: 0.5731441
 
 Q9. Function: Iran_Cyber
-	Points:
+	Points:100
 	Title:Iran Cyber Attack
 	Content: Iran has launched an attack on your digital foundations, find the passcode to prevent a complete strategic defeat.
 	125874, and its double, 251748, have the same digits, similarly, the passcode is the smallest positive integer x such that 2x, 3x, 4x, 5x and 6x contain the same digits.
 	Ans: 142857
 
 Q10.Function: Guerilla Warfare
-	Points:
+	Points:300
 	Title:To hell with Reason!
 	Content:You refuse to engage Iran on the cyber front, sling your greatsword on your back, and walk out of the white house, prepared for guerilla warfare.
 
@@ -163,29 +163,19 @@ Q10.Function: Guerilla Warfare
 	Ans: 34029210557338
 
 Q11.Function: Intelligence Service
-	Points:
+	Points:100
 	Title:Fight Wire with Wire
 	Content:You summon that peculiar mixture of young and old, pale as if they haven't seen the sun in decades, our Intelligence Service!
-	To break the Iranian assault, you must navigate the halls of circular thinking and break free.
-	Starting with 1 and spiralling anticlockwise in the following way, a square spiral with side length 7 is formed.
+	The peculiarities of this otherworldly assault require the usage of strange Mathematicks to overflow arcane buffers beyond your understanding.
+	There are exactly 10 ways of choosing three from five, i.e., 5C3 = 10.
+	In general, nCr = n! / (r! x (n-r)!)
+	How many, not necessarily distinct, values of (nr) for 1≤n≤100, are greater than one-million?
 
-	37 36 35 34 33 32 31
-	38 17 16 15 14 13 30
-	39 18  5  4  3 12 29
-	40 19  6  1  2 11 28
-	41 20  7  8  9 10 27
-	42 21 22 23 24 25 26
-	43 44 45 46 47 48 49
-
-	It is interesting to note that the odd squares lie along the bottom right diagonal, but what is more interesting is that 8 out of the 13 numbers lying along both diagonals are prime; that is, a ratio of 8/13 ≈ 62%.
-
-	If one complete new layer is wrapped around the spiral above, a square spiral with side length 9 will be formed. If this process is continued, what is the side length of the square spiral for which the ratio of primes along both diagonals first falls below 10%?
-
-	Ans: 26241
+	Ans: 4075
 
 
 Q12. Throne Room
-	Points:
+	Points:150
 	Title: Victor's Choice
 	Content: The final push, you attempt to capture the royal palace.
 
@@ -199,7 +189,7 @@ Q12. Throne Room
 	Ans:102915032
 
 Q13. Func: Iran Network Down
-	Points:
+	Points:400
 	Title:War of the wizards
 	Content:You try to bring the iranian network down, paving the way for a complete strategic victory.
 	Their binary nature of their network intertwines it's fate with the number 2, you must get to understand the root of 2 to destroy it.
@@ -214,7 +204,7 @@ Q13. Func: Iran Network Down
 	Ans: 153
 
 Q14. Func: Ashen Victory
-	Points:
+	Points:200
 	Title: Forward, glorious death!
 	Content:You believe in our troops and give them the chance to savour the ashen taste of victory.
 	In the midst of battle, divine inspiration strike you and you realise that the secret to overflowing the enemy encirclements is held in Budget-Lychrel numbers.
@@ -232,7 +222,26 @@ Q14. Func: Ashen Victory
 
 	Ans: 249
 
-Q15. 
+Q15. Func: Impeach
+	Points: 500
+	Title: Prison
+	Content: You fight to prevent your impeachment and decapitation for extraordinary disservice to God and Country
+	To break the Democrats's arguments you must navigate the halls of circular thinking and break free of all reason.
+	Starting with 1 and spiralling anticlockwise in the following way, a square spiral with side length 7 is formed.
+
+	37 36 35 34 33 32 31
+	38 17 16 15 14 13 30
+	39 18  5  4  3 12 29
+	40 19  6  1  2 11 28
+	41 20  7  8  9 10 27
+	42 21 22 23 24 25 26
+	43 44 45 46 47 48 49
+
+	It is interesting to note that the odd squares lie along the bottom right diagonal, but what is more interesting is that 8 out of the 13 numbers lying along both diagonals are prime; that is, a ratio of 8/13 ≈ 62%.
+
+	If one complete new layer is wrapped around the spiral above, a square spiral with side length 9 will be formed. If this process is continued, what is the side length of the square spiral for which the ratio of primes along both diagonals first falls below 10%?
+
+	Ans: 26241
 
 
 
