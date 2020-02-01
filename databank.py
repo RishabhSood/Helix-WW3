@@ -131,3 +131,55 @@ Q7. Function:
     Find F(8) mod 135707531.
 
 	Ans: 16276736
+
+Q8. Function:UN_Moderate
+	Points:
+	Title:Trusty Old Farts
+	Content:Your explanation was rejected, it's now time to send in your time-tested lawyers
+
+	You have nine lawyers with, whose arguments can have an effectiveness of 1, 2, 3, or 4.
+	Iran has only six lawyers but their arguments can have effectiveness from 1, 2, 3, 4, 5, 6 due to your aggression.
+
+	Find out the probability of your lawyers succeeding to help them plan better, if the efficacy of both sides' arguments are equal, it's a draw.
+	Submit your answer upto 7 decimal places, as 0.BCDEFGH
+
+	Ans: 0.5731441
+
+Q9. Guerilla Warfare
+	Points:
+	Title:To hell with Reason!
+	Content:You refuse to engage Iran on the cyber front, sling your greatsword on your back, and walk out of the white house, prepared for guerilla warfare.
+
+	The Iranian are also well-versed with guerrilla warfare and seem to be implying a strategy relying on gozinta chains, solve this problem to defeat them on their own land.
+	
+	A gozinta chain for n is a sequence {1,a,b,...,n} where each element properly divides the next.
+	There are eight gozinta chains for 12:
+	{1,12} ,{1,2,12}, {1,2,4,12}, {1,2,6,12}, {1,3,12}, {1,3,6,12}, {1,4,12} and {1,6,12}.
+	Let g(n) be the number of gozinta chains for n, so g(12)=8.
+	g(48)=48 and g(120)=132.
+
+	Find the sum of the numbers n not exceeding 1016 for which g(n)=n.
+	Answer: 12144044603581281
+
+Q10. Throne Room
+	Points:
+	Title: Victor's Choice
+	Content: The final push, you attempt to capture the royal palace.
+
+	The path to the throne room is blocked by a door, you must get the passcode in time or the king may flee.
+	The passcode is the 3 X 10^6th term of a series defined by: 
+		a0 = 1;
+		for n ≥ 1, an is the sum of the digits of all preceding terms.
+	The 10^6th term is 31054319
+	The sequence starts with 1, 1, 2, 4, 8, 16, 23, 28, 38, 49, ...
+
+	Answer:102915032
+
+
+
+
+
+
+
+
+
