@@ -145,7 +145,7 @@ Q8. Function:UN_Moderate
 
 	Ans: 0.5731441
 
-Q9. Guerilla Warfare
+Q10. Guerilla Warfare
 	Points:
 	Title:To hell with Reason!
 	Content:You refuse to engage Iran on the cyber front, sling your greatsword on your back, and walk out of the white house, prepared for guerilla warfare.
@@ -161,7 +161,7 @@ Q9. Guerilla Warfare
 	Find the sum of the numbers n not exceeding 1016 for which g(n)=n.
 	Answer: 12144044603581281
 
-Q10. Throne Room
+Q12. Throne Room
 	Points:
 	Title: Victor's Choice
 	Content: The final push, you attempt to capture the royal palace.
