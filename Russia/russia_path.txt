@@ -4,7 +4,7 @@
 #• Do you want to help Japan in their war against Chinese forces or do you want to attack them on another front?
 #• Japan help-
 #Your forces got annihilated and a lot of U.S. blood was lost(-500) though Chinese forces were successfully eradicated from Japan.
-#1) China threatens U.S. by getting involved in Afghanistan war.					
+#1) China threatens U.S. by getting involved in Afghanistan war.
 #3) Russia supporting China against U.S. to assert their dominance over a nation which has humiliated them in the past.
 #4) U.S. tries to infiltrate the Chinese concentration camps but fails as China founds out their spies, gathers proof against U.S..
 #5) U.S. sends troops to release their captured spies but our found out by China and are executed. 
@@ -26,16 +26,74 @@ m_2_036::Stiff Audience::Some of the more noconfrontational personalities agree 
 p_3_037::Dratted Computers:: Defend yourself from this talking monitor which for some reason has more brains than the rest of the gathering combined.
 
 f_3_038::The wisdom of crowds::You stumble through your explanation but when the Mainframe tries to press his advantage, the others shout over him, calling him a worrywart and telling you to just get this sorted. 
-m_3_039::Caught Unawares *wink*::Russia attacks in the night......
+m_3_039::Caught Unawares *wink*::Russia attacks in the night, the intelligence service has been unable to locate the damage, but you have a vague feeling of no longer being watched by AI overlords.
 
 p_2_040::We must declare war... Yesterday!::You try to convince the gathering that the best course of action is to just start this battle more awaited than cleganebowl.
 
 c_2_041::Point of Attack::You resolve to meet Russia Head-on, choose where to attack.
 
+m_2_042::Cyber War!::You decide to attack Russian Digital infrastructure, aiming for electrical blackouts, failure of military equipment and obtaining national security secrets to cripple the enemy before they can attack.
+p_3_043::
 
 
+m_2_044::Winter War!::You have decide that the fire in your hearts can [Insert a reference here] brave the russian cold and ask for Nato Support for the same.
+p_3_045::Our Glorious Allies!::Convince Nato of your war being just!
+p_4_046::[INSANE PROBLEM, expected failure]
+#Have it bypass call1
 
+m_3_047::No Comment::You must trudge on.. show the cowards you have for allies the truth in your heart [Replace with reference].
+#Things planned for this one, need a graph now
 
+p_4_048::War is On!::You must push forward with your forces.[change this]
+c_4_049::Wake up, sleepyhead::Your right ear rings and a voice speaks @$%×#$%#@%%%#@#$. Your memory of your training as a Russian spy returns to you.... ....
+
+p_5_050::Set it and Forget it::You do not even turn to look as the White House, the symbol of the Presidency, the United States government, and the American people, explodes in flames as you board your ex-Presidential Jet to Moscow.[problem text]::CNThe Road Never Taken.
+#Try to fight against the UNITED STATES, with you as commander of the armies, putin names you successor, might have to assassinate a few other candidates, then china attacks.
+#Decide later where this route takes you
+
+m_4_051::Down with the Russians::You choose to return to Moscow your own way, guns blazing and bombs dropping.
+p_5_052::
+#p_6_053::Final push::
+c_5_054::The Bear is dead...::You have destroyed Russia, despite their bravado and showboating, moscow's actual war-readiness left much to be desired. What now?
+m_5_055::Long live the Bear and the Eagle!::You decide to conjoin the Bear of the North and the Eagle of Oil, under your guidance.. as the senate is about to protest...
+m_5_056::The birth of Nations::You declare plans for the division of Russia into sovereign nations, to be overseen by a new body under the UN.. your broadcast is halted to report that...
+
+p_6_057::Most powerful man for sale::You try to sell your importance to the russian govt, with your handwritten notes on your victory plan against the United States that no sane human can decode.
+e_6_058::Pariah::Your plans are rejected and you are sent of to a farm in rural Russia, you live peacefully on a farm in siberia, until a the day a polar bear bit your head off, you died nameless, but the reptiles never conquered your grave.
+c_6_059::Return of the Trump::With your military and tactical genius, and the notes you copied off the government think tank you tasked with devising the easiest way for russia to destroy the US, America collapses within a day, your popularity is at its peak.
+
+m_6_060::I am the senate!::You declare yourself emperor of Russia, the troops will follow you, as you prepare to head back to moscow, the news reaches you, the Kremlin is done for...
+
+p_7_061::Expendable::Your work finished, the kremlin sends assassins after you, defend yourself.
+e_7_062::A Broken Knife::Alas, the russians used you, you died even before the reptilian revolution, leaving the earth bereft of it's last hope, it's last hero.
+m_7_063::The Trump Awakens::You slay all the assassins with the Krav Maga Netanhayu taught you, a soldier rushes in with the news that you are the last hope of Russia, the Kremlin blew up this morning...
+
+m_6_064::A Phantom Pooh::The Chinese have attacked, explosions in US and Russian military Bases across the world aree accompanied by a video of Chinese President Xi Jinping's declaration of war on the old superpowers due to their constant interference in other countries' internal matters.
+
+c_6_065::Empire Strikes Back!::Choose the path that shall end China.
+p_7_066::Solo, a Trump story::No one else can be trusted, you must accomplish this on your own, infiltrate china.
+c_7_067::A sinister plot::Walking through rural china, you pass empty towns and armies of dazed peasants led by snakelike men in People's Liberation Army uniforms, you hear mentions of the Forbidden City.
+
+p_8_068::Trump Power!::You engage a battalion in combat, fight!
+m_8_069::One Man Army!::With your almost divine martial prowess you manage to defeat them and find out that the inhuman chinese leadership has brainwashed the masses, this is a repltilian ploy for world domination.
+e_8_070::Luck::Your luck could only last so long, you die as the horde tears into your flesh.
+
+p_8_071::The Forbidden City::You infiltrate the forbidden city and see dead people and reptilian soldiers everywhere, fight your way into the inner sanctum.
+m_8_072::El fin::You enter the inner sanctum to see Xi Jinping shedding his humanoid skin, and then his Ursine skin, to reveal a half-lizard abomination, he smiles and says, Ahh, Donald, I knew you would Come!
+p_9_073::Duel Of the Fates::Cut of the head and the snakes collapses, kill Xi to save the world!
+e_9_074::Highlander::In a battle for the ages, you decapitate his head, and his smile turns into a frown as he dies. You've won, earth is saved, rejoice, Hero!
+e_9_075::Hail Hydra::As you cut off Xi's head with your greatsword, two more pop up and spew fire at you, your outer skin burns off as Xi decapitates you with your own sword, the reptilian revolution succeds, earth devolves into a wasteland.
+
+p_7_076::The ***** Wars::You will fight fire with fire, armies with armies, you will not balk, and at the end of this, you'll be the victor!
+c_7_077::Black Wings::You receive intel of your armies being destroyed by fiendish armies which feel no pain, there is now only one option, will you make the choice??
+
+p_8_078::Investigate::You send your elite spies to find out the cause for your losses.
+m_8_079::::You receive reports of rituals to strange gods and sermon which brainwash the masses into brainless husks ready for war, there is only one option.
+
+p_8_080::The Nuclear Option::The reptilians have invaded this far, you must use the last option, give up your life, blow up russia and all of asia, for the future of the Earth!
+
+e_8_081::Sacrifice::You scarifice your life, russia.. and asia.. and are sung of till the end of humanity in the next reptilian revolution.
+e_8_082::Moron::You came this far and still failed.
 
 }
 
@@ -50,12 +108,76 @@ c_1_034 -> p_2_040;
 p_2_040 -> c_2_041;
 m_3_039 -> c_2_041;
 
+c_2_041 -> m_2_042;
+m_2_042 -> p_3_043;
+
+c_2_041 -> m_2_044;
+m_2_044 -> p_3_045;
+p_3_045 -> p_4_046;
+#Should really allow inline online comments,this is the point of bypass.
+
+m_3_047 -> p_4_048;
+p_3_043 -> p_4_048;
+p_4_048 -> c_4_049;
+
+c_4_049 -> p_5_050;
+c_4_049 -> m_4_051;
+p_4_046 -> m_4_051;
+
+m_4_051 -> p_5_052;
+
+p_5_052 -> c_5_054;
+c_5_054 -> m_5_055;
+c_5_054 -> m_5_056;
+m_5_055 -> m_6_064;
+m_5_056 -> m_6_064;
+
+p_5_050 -> p_6_057;
+p_6_057 -> c_6_059;
+c_6_059 -> m_6_060;
+c_6_059 -> p_7_061;
+
+m_6_060 -> m_6_064;
+
+p_7_061 -> m_7_063;
+m_7_063 -> m_6_064;
+
+m_6_064 -> c_6_065;
+c_6_065 -> p_7_066;
+c_6_065 -> p_7_076;
+
+p_7_066 -> c_7_067;
+c_7_067 -> p_8_068;
+c_7_067 -> p_8_071;
+
+p_8_068 -> m_8_069;
+m_8_069 -> p_8_071;
+
+p_8_071 -> m_8_072;
+m_8_072 -> p_9_073;
+p_9_073 -> e_9_074;
+
+p_7_076 -> c_7_077;
+c_7_077 -> p_8_078;
+c_7_077 -> p_8_080;
+
+p_8_078 -> m_8_079;
+m_8_079 -> p_8_080;
+p_8_080 -> e_8_081;
+
 }
 
 Fails:{
 p_3_037 -f f_3_038;
+p_3_045 -f m_3_047;
+p_6_057 -f e_6_058;
+p_7_061 -f e_7_062;
+p_8_068 -f e_8_070;
+p_9_073 -f e_9_075;
+p_8_080 -f e_8_082;
 
 }
 
 #Ideas:
 #
+
