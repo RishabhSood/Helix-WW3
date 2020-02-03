@@ -365,11 +365,7 @@ def load():
     display_text_animation(""" Loading ... """, 250, 100, RED, 20)
     display_text_animation(""" Loading ... """, 250, 100, RED, 20)
     pygame.mixer.music.stop()
-    score_log = open("ww3_log.txt", "at")
-    score_log.write("\n------------------------------------------------------------------------------------------\n")
-    score_log.write("Welcome to Path Iran\n")
-    score_log.write("------------------------------------------------------------------------------------------\n\n")
-    score_log.close()
+
     qn_temp("Somewhere in Iran (050 pts)", 230, 
             """1,150,000 people stand in a circle. One of them is an undercover agent. There is a sword in 
             the hand of the 1st person, he kills the 2nd person and passes on the sword to the third, 
@@ -402,6 +398,12 @@ def iran():
                 if event.type == pygame.QUIT:
                     pygame.quit()
                     sys.exit()
+                    
+    score_log = open("ww3_log.txt", "at")
+    score_log.write("\n------------------------------------------------------------------------------------------\n")
+    score_log.write("Welcome to Path Iran\n")
+    score_log.write("------------------------------------------------------------------------------------------\n\n")
+    score_log.close()
     
     display_text_animation("""Iran has attacked US military """, 250, 100, WHITE, 10, DISPLAYSURF)
     display_text_animation("""Your bases in Iraq have retaliated.""", 250, 100, WHITE, 10, DISPLAYSURF)
@@ -1250,10 +1252,1160 @@ def sad_old():
 #--------------------------------------- welcome to russia path -------------------------------------------------------------------#
 #russia option welcome screen
 def russia():
-    messagebox.showerror("Error", "GAME UNDER CONSTRUCTION!!")
+    WINDOW_WIDTH = 500
+    WINDOW_HEIGHT = 200
+    
+    pygame.init()
+    DISPLAYSURF = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+
+    pygame.mixer.music.load("WW3music.mp3")
+    pygame.mixer.music.set_volume(0.5)
+    pygame.mixer.music.play(-1)
+        
+    def main():
+        while True:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    sys.exit()
+                    
+    score_log = open("ww3_log.txt", "at")
+    score_log.write("\n------------------------------------------------------------------------------------------\n")
+    score_log.write("Welcome to Path Russia")
+    score_log.write("------------------------------------------------------------------------------------------\n\n")
+    score_log.close()
+    
+    display_text_animation("""Russia starts arms buildup... """, 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""... along its European borders""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""Leaders in your country have gathered """, 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""Make a decision on what to do ... """, 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""...with the arms buildup """, 250, 100, WHITE, 10, DISPLAYSURF)
+    pygame.mixer.music.stop()
+
+    two_options("Make a decision:"
+            , 470, "No Panic", russia_calm, "War", russia_war)
+    exit()
+
+def russia_calm():
+    WINDOW_WIDTH = 500
+    WINDOW_HEIGHT = 200
+    
+    pygame.init()
+    DISPLAYSURF = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+
+    pygame.mixer.music.load("WW3music.mp3")
+    pygame.mixer.music.set_volume(0.5)
+    pygame.mixer.music.play(-1)
+        
+    def main():
+        while True:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    sys.exit()
+    
+    display_text_animation("""Defend your decision by answering the next problem... """, 250, 100, WHITE, 10, DISPLAYSURF)
+    pygame.mixer.music.stop()
+    
+    qn_temp("In my defense (050 pts)", 230, 
+            """1,150,000 people stand in a circle. One of them is an undercover agent. There is a sword in 
+            the hand of the 1st person, he kills the 2nd person and passes on the sword to the third, 
+            who kills the fourth and gives the sword to the 5th, this goes on until one person is left. 
+            At what position does the spy stand to survive?""", 10, "0", russia_calm_cont, default_wrong,"800x350", 0, 0, 50)
+    
+def russia_calm_cont():
+    WINDOW_WIDTH = 500
+    WINDOW_HEIGHT = 200
+    
+    pygame.init()
+    DISPLAYSURF = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+
+    pygame.mixer.music.load("WW3music.mp3")
+    pygame.mixer.music.set_volume(0.5)
+    pygame.mixer.music.play(-1)
+        
+    def main():
+        while True:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    sys.exit()
+    
+    display_text_animation("""Some of the more noconfrontational personalities agree """, 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""but an old mainframe in the back""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""makes allegations of incompetence, ...""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""... or worse, COLLUSION.  """, 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""Defend yourself by answering the next problem... """, 250, 100, WHITE, 10, DISPLAYSURF)
+    pygame.mixer.music.stop()
+    
+    qn_temp_no_opt("Dratted Computers (050 pts)", 230, 
+            """1,150,000 people stand in a circle. One of them is an undercover agent. There is a sword in 
+            the hand of the 1st person, he kills the 2nd person and passes on the sword to the third, 
+            who kills the fourth and gives the sword to the 5th, this goes on until one person is left. 
+            At what position does the spy stand to survive?""", 10, "0", russia_wink, russia_anyhow,"800x350", 0, 0, 50)
+    
+    exit()
+
+def russia_wink():
+    WINDOW_WIDTH = 500
+    WINDOW_HEIGHT = 200
+    
+    pygame.init()
+    DISPLAYSURF = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+
+    pygame.mixer.music.load("WW3music.mp3")
+    pygame.mixer.music.set_volume(0.5)
+    pygame.mixer.music.play(-1)
+        
+    def main():
+        while True:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    sys.exit()
+
+    display_text_animation("""Russia attacks in the night!!""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""Unable to locate damage...""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""You decide too hell with AI overlords""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""Time to Attack!!""", 250, 100, WHITE, 10, DISPLAYSURF)
+    pygame.mixer.music.stop()
+    russia_war()
     exit()
     
+def russia_anyhow():
+    WINDOW_WIDTH = 500
+    WINDOW_HEIGHT = 200
+    
+    pygame.init()
+    DISPLAYSURF = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+
+    pygame.mixer.music.load("WW3music.mp3")
+    pygame.mixer.music.set_volume(0.5)
+    pygame.mixer.music.play(-1)
+        
+    def main():
+        while True:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    sys.exit()
+    
+
+    display_text_animation("""You stumble through your explanation but... """, 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""Mainframe tries to press his advantage...""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""Other shout over him, calling him a worrywart..""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""You are asked to simply get this sorted with...""", 250, 100, WHITE, 10, DISPLAYSURF)
+    pygame.mixer.music.stop()
+    
+    russia_wink()
+    exit()
+    
+def russia_war():
+    WINDOW_WIDTH = 500
+    WINDOW_HEIGHT = 200
+    
+    pygame.init()
+    DISPLAYSURF = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+
+    pygame.mixer.music.load("WW3music.mp3")
+    pygame.mixer.music.set_volume(0.5)
+    pygame.mixer.music.play(-1)
+        
+    def main():
+        while True:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    sys.exit()
+    
+    display_text_animation("""You choose to meet russia head on... """, 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""Choose where to attack...""", 250, 100, WHITE, 10, DISPLAYSURF)
+    pygame.mixer.music.stop()
+    
+    two_options("Choose Attack Mode"
+            , 470, "Cyber War", russia_cyber, "Winter War", russia_winter)
+    
+    exit()
+
+def russia_cyber():
+    WINDOW_WIDTH = 500
+    WINDOW_HEIGHT = 200
+    
+    pygame.init()
+    DISPLAYSURF = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+
+    pygame.mixer.music.load("WW3music.mp3")
+    pygame.mixer.music.set_volume(0.5)
+    pygame.mixer.music.play(-1)
+        
+    def main():
+        while True:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    sys.exit()
+    
+    display_text_animation("""You decide to attack Russian Digital infrastructure ...""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""Obtain Electrical blackouts, failure of military equipment and""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""National Security secrets in order to cripple them...""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""Continue by answering the next problem... """, 250, 100, WHITE, 10, DISPLAYSURF)
+    pygame.mixer.music.stop()
+    
+    qn_temp("Digital War (050 pts)", 230, 
+            """1,150,000 people stand in a circle. One of them is an undercover agent. There is a sword in 
+            the hand of the 1st person, he kills the 2nd person and passes on the sword to the third, 
+            who kills the fourth and gives the sword to the 5th, this goes on until one person is left. 
+            At what position does the spy stand to survive?""", 10, "0", russia_war_on, default_wrong,"800x350", 0, 0, 50)
+    
+    exit()
+
+def russia_winter():
+    WINDOW_WIDTH = 500
+    WINDOW_HEIGHT = 200
+    
+    pygame.init()
+    DISPLAYSURF = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+
+    pygame.mixer.music.load("WW3music.mp3")
+    pygame.mixer.music.set_volume(0.5)
+    pygame.mixer.music.play(-1)
+        
+    def main():
+        while True:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    sys.exit()
+    
+    display_text_animation("""You have decide that the fire in your hearts can brave the...""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""... russian cold and ask for Nato Support for the same.""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""Convince Nato of your war being just... """, 250, 100, WHITE, 10, DISPLAYSURF)
+    pygame.mixer.music.stop()
+    
+    qn_temp_no_opt("Our Glorious Allies (050 pts)", 230, 
+            """1,150,000 people stand in a circle. One of them is an undercover agent. There is a sword in 
+            the hand of the 1st person, he kills the 2nd person and passes on the sword to the third, 
+            who kills the fourth and gives the sword to the 5th, this goes on until one person is left. 
+            At what position does the spy stand to survive?""", 10, "0", allies_accept, allies_reject,"800x350", 0, 0, 50)
+    
+    exit()
+
+def allies_accept():
+    WINDOW_WIDTH = 500
+    WINDOW_HEIGHT = 200
+    
+    pygame.init()
+    DISPLAYSURF = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+
+    pygame.mixer.music.load("WW3music.mp3")
+    pygame.mixer.music.set_volume(0.5)
+    pygame.mixer.music.play(-1)
+        
+    def main():
+        while True:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    sys.exit()
+    
+    display_text_animation("""NATO has decide to give you an ear...""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""Convince them by answering the following problem... """, 250, 100, WHITE, 10, DISPLAYSURF)
+    pygame.mixer.music.stop()
+    
+    qn_temp("Insanity (050 pts)", 230, 
+            """1,150,000 people stand in a circle. One of them is an undercover agent. There is a sword in 
+            the hand of the 1st person, he kills the 2nd person and passes on the sword to the third, 
+            who kills the fourth and gives the sword to the 5th, this goes on until one person is left. 
+            At what position does the spy stand to survive?""", 10, "0", trump_rogue, default_wrong,"800x350", 0, 0, 50)
+    
+    exit()
+    
+def allies_reject():
+    WINDOW_WIDTH = 500
+    WINDOW_HEIGHT = 200
+    
+    pygame.init()
+    DISPLAYSURF = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+
+    pygame.mixer.music.load("WW3music.mp3")
+    pygame.mixer.music.set_volume(0.5)
+    pygame.mixer.music.play(-1)
+        
+    def main():
+        while True:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    sys.exit()
+    
+    display_text_animation("""Your offer gets rejected...""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""Show them that you have the truth as your ally!! """, 250, 100, WHITE, 10, DISPLAYSURF)
+    pygame.mixer.music.stop()
+    
+    russia_war_on()
+    exit()
+    
+def russia_war_on():
+    WINDOW_WIDTH = 500
+    WINDOW_HEIGHT = 200
+    
+    pygame.init()
+    DISPLAYSURF = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+
+    pygame.mixer.music.load("WW3music.mp3")
+    pygame.mixer.music.set_volume(0.5)
+    pygame.mixer.music.play(-1)
+        
+    def main():
+        while True:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    sys.exit()
+    
+    display_text_animation("""War is on!!""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""Continue by solving the next problem... """, 250, 100, WHITE, 10, DISPLAYSURF)
+    pygame.mixer.music.stop()
+    
+    qn_temp("War is on! (050 pts)", 230, 
+            """1,150,000 people stand in a circle. One of them is an undercover agent. There is a sword in 
+            the hand of the 1st person, he kills the 2nd person and passes on the sword to the third, 
+            who kills the fourth and gives the sword to the 5th, this goes on until one person is left. 
+            At what position does the spy stand to survive?""", 10, "0", russia_the_spy, default_wrong,"800x350", 0, 0, 50)
+    
+    exit()
+
+def russia_the_spy():
+    WINDOW_WIDTH = 500
+    WINDOW_HEIGHT = 200
+    
+    pygame.init()
+    DISPLAYSURF = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+
+    pygame.mixer.music.load("WW3music.mp3")
+    pygame.mixer.music.set_volume(0.5)
+    pygame.mixer.music.play(-1)
+        
+    def main():
+        while True:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    sys.exit()
+
+    display_text_animation("""Bam!!!""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""@$%×#$%#@%%%#@#$!!! """, 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""Your memory of your training as a ... """, 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""Russian spy returns to you ...""", 250, 100, WHITE, 10, DISPLAYSURF)
+    pygame.mixer.music.stop()
+    
+    two_options("Go back to russia and sell your Country?"
+            , 470, "Yes", spy_returns, "No", trump_rogue)
+    
+    exit()
+
+def trump_rogue():
+    WINDOW_WIDTH = 500
+    WINDOW_HEIGHT = 200
+    
+    pygame.init()
+    DISPLAYSURF = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+
+    pygame.mixer.music.load("WW3music.mp3")
+    pygame.mixer.music.set_volume(0.5)
+    pygame.mixer.music.play(-1)
+        
+    def main():
+        while True:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    sys.exit()
+
+    display_text_animation("""You choose to return to Moscow your own way...""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""Blazing Guns and exploding bombs!! """, 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""Continue by answering the following problem... """, 250, 100, WHITE, 10, DISPLAYSURF)
+    pygame.mixer.music.stop()
+    
+    qn_temp("Attack Russia (050 pts)", 230, 
+            """1,150,000 people stand in a circle. One of them is an undercover agent. There is a sword in 
+            the hand of the 1st person, he kills the 2nd person and passes on the sword to the third, 
+            who kills the fourth and gives the sword to the 5th, this goes on until one person is left. 
+            At what position does the spy stand to survive?""", 10, "0", russia_destroyed, default_wrong,"800x350", 0, 0, 50)
+    exit()
+
+def russia_destroyed():
+    WINDOW_WIDTH = 500
+    WINDOW_HEIGHT = 200
+    
+    pygame.init()
+    DISPLAYSURF = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+
+    pygame.mixer.music.load("WW3music.mp3")
+    pygame.mixer.music.set_volume(0.5)
+    pygame.mixer.music.play(-1)
+        
+    def main():
+        while True:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    sys.exit()
+    
+    display_text_animation("""Moscow's actual war readiness left much to be desired...""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""You have destroyed Russia!!!""", 250, 100, WHITE, 10, DISPLAYSURF)
+    pygame.mixer.music.stop()
+    
+    two_options("Choose a path forward:"
+            , 470, "Unify", russia_unify, "Birth of Nations", birth_of_nations)
+    exit()
+
+def russia_unify():
+    WINDOW_WIDTH = 500
+    WINDOW_HEIGHT = 200
+    
+    pygame.init()
+    DISPLAYSURF = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+
+    pygame.mixer.music.load("WW3music.mp3")
+    pygame.mixer.music.set_volume(0.5)
+    pygame.mixer.music.play(-1)
+        
+    def main():
+        while True:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    sys.exit()
+
+    display_text_animation("""You decide to conjoin the Bear of the North and the Eagle of Oil""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""under your guidance.. as the senate is about to protest...""", 250, 100, WHITE, 10, DISPLAYSURF)
+    pygame.mixer.music.stop()
+    china_war()
+    exit()
+
+def birth_of_nations():
+    WINDOW_WIDTH = 500
+    WINDOW_HEIGHT = 200
+    
+    pygame.init()
+    DISPLAYSURF = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+
+    pygame.mixer.music.load("WW3music.mp3")
+    pygame.mixer.music.set_volume(0.5)
+    pygame.mixer.music.play(-1)
+        
+    def main():
+        while True:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    sys.exit()
+
+    display_text_animation("""You declare plans for the division of Russia into sovereign nations...""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""to be overseen by a new body under the UN...""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""your broadcast is halted to report that...""", 250, 100, WHITE, 10, DISPLAYSURF)
+    pygame.mixer.music.stop()
+    china_war()
+    exit()
+    
+def spy_returns():
+    WINDOW_WIDTH = 500
+    WINDOW_HEIGHT = 200
+    
+    pygame.init()
+    DISPLAYSURF = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+
+    pygame.mixer.music.load("WW3music.mp3")
+    pygame.mixer.music.set_volume(0.5)
+    pygame.mixer.music.play(-1)
+        
+    def main():
+        while True:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    sys.exit()
+    
+    display_text_animation("""You ride your plane to Moscow, as you ditch your country""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""Continue by solving the next problem...""", 250, 100, WHITE, 10, DISPLAYSURF)
+    pygame.mixer.music.stop()
+    
+    qn_temp("Set it and forget it (050 pts)", 230, 
+            """1,150,000 people stand in a circle. One of them is an undercover agent. There is a sword in 
+            the hand of the 1st person, he kills the 2nd person and passes on the sword to the third, 
+            who kills the fourth and gives the sword to the 5th, this goes on until one person is left. 
+            At what position does the spy stand to survive?""", 10, "0", spy_cont, default_wrong,"800x350", 0, 0, 50)
+    exit()
+
+def spy_cont():
+    WINDOW_WIDTH = 500
+    WINDOW_HEIGHT = 200
+    
+    pygame.init()
+    DISPLAYSURF = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+
+    pygame.mixer.music.load("WW3music.mp3")
+    pygame.mixer.music.set_volume(0.5)
+    pygame.mixer.music.play(-1)
+        
+    def main():
+        while True:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    sys.exit()
+    
+    display_text_animation("""Now that you have chosen to return, you try to sell...""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""your handwritten plans to destroy The United States... """, 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""which no other sane human can decode... """, 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""Succeed by solving the next problem...""", 250, 100, WHITE, 10, DISPLAYSURF)
+    pygame.mixer.music.stop()
+    
+    qn_temp_no_opt("Trump For Sale (050 pts)", 230, 
+            """1,150,000 people stand in a circle. One of them is an undercover agent. There is a sword in 
+            the hand of the 1st person, he kills the 2nd person and passes on the sword to the third, 
+            who kills the fourth and gives the sword to the 5th, this goes on until one person is left. 
+            At what position does the spy stand to survive?""", 10, "0", trump_returns, spy_death,"800x350", 0, 0, 50)
+    exit()
+
+def spy_death():
+    WINDOW_WIDTH = 500
+    WINDOW_HEIGHT = 200
+    
+    pygame.init()
+    DISPLAYSURF = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+
+    pygame.mixer.music.load("WW3music.mp3")
+    pygame.mixer.music.set_volume(0.5)
+    pygame.mixer.music.play(-1)
+        
+    def main():
+        while True:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    sys.exit()
+    
+    scor = "Your score is " + str(score)
+    score_file = open("score.txt", "at")
+    score_file.write("\nRussia Path Score: " + str(score))
+    score_file.close()
+    score_log = open("ww3_log.txt", "at")
+    score_log.write("\n+---------------------------------russia path fin-------------------------------------------\n")
+    score_log.close()
+    
+    display_text_animation("""Your plans were rejected by the Russian govt.""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""you are sent to live in siberia for the rest of your life... """, 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""you die nameless!!!""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation(scor , 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""GAME OVER""", 250, 100, WHITE, 10, DISPLAYSURF)
+    pygame.mixer.music.stop()
+    sys.exit()
+
+def trump_returns():
+    WINDOW_WIDTH = 500
+    WINDOW_HEIGHT = 200
+    
+    pygame.init()
+    DISPLAYSURF = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+
+    pygame.mixer.music.load("WW3music.mp3")
+    pygame.mixer.music.set_volume(0.5)
+    pygame.mixer.music.play(-1)
+        
+    def main():
+        while True:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    sys.exit()
+    
+    display_text_animation("""With your military and tactical genius...""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""you are entrusted with destroying US in the easiest way... """, 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""America collapses within a day... """, 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""Your popularity is at it's peak!!!""", 250, 100, WHITE, 10, DISPLAYSURF)
+    pygame.mixer.music.stop()
+    
+    two_options("Press your claim over Russia?"
+            , 470, "Yes", trump_senate, "No", trump_expendable)
+    
+    exit()
+
+def trump_senate():
+    WINDOW_WIDTH = 500
+    WINDOW_HEIGHT = 200
+    
+    pygame.init()
+    DISPLAYSURF = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+
+    pygame.mixer.music.load("WW3music.mp3")
+    pygame.mixer.music.set_volume(0.5)
+    pygame.mixer.music.play(-1)
+        
+    def main():
+        while True:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    sys.exit()
+    
+    display_text_animation("""You declare yourself emperor of Russia!!""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""the troops will follow you, as you prepare to head back to moscow""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""The kremlin sens assasins after you, as your work is done... """, 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""the news reaches you, the Kremlin is done for...""", 250, 100, WHITE, 10, DISPLAYSURF)
+    pygame.mixer.music.stop()
+    
+    china_war()
+    exit()
+
+def trump_expendable():
+    WINDOW_WIDTH = 500
+    WINDOW_HEIGHT = 200
+    
+    pygame.init()
+    DISPLAYSURF = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+
+    pygame.mixer.music.load("WW3music.mp3")
+    pygame.mixer.music.set_volume(0.5)
+    pygame.mixer.music.play(-1)
+        
+    def main():
+        while True:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    sys.exit()
+    
+    display_text_animation("""Your work is done...""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""The kremlin has sent assasins to finish you off... """, 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""Defend yourself by answering the next problem... """, 250, 100, WHITE, 10, DISPLAYSURF)
+    pygame.mixer.music.stop()
+    
+    qn_temp_no_opt("Expendable (050 pts)", 230, 
+            """1,150,000 people stand in a circle. One of them is an undercover agent. There is a sword in 
+            the hand of the 1st person, he kills the 2nd person and passes on the sword to the third, 
+            who kills the fourth and gives the sword to the 5th, this goes on until one person is left. 
+            At what position does the spy stand to survive?""", 10, "0", trump_rises, trump_death,"800x350", 0, 0, 50)
+    exit()
+
+def trump_death():
+    WINDOW_WIDTH = 500
+    WINDOW_HEIGHT = 200
+    
+    pygame.init()
+    DISPLAYSURF = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+
+    pygame.mixer.music.load("WW3music.mp3")
+    pygame.mixer.music.set_volume(0.5)
+    pygame.mixer.music.play(-1)
+        
+    def main():
+        while True:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    sys.exit()
+    
+    scor = "Your score is " + str(score)
+    score_file = open("score.txt", "at")
+    score_file.write("\nRussia Path Score: " + str(score))
+    score_file.close()
+    score_log = open("ww3_log.txt", "at")
+    score_log.write("\n+---------------------------------russia path fin-------------------------------------------\n")
+    score_log.close()
+    
+    display_text_animation("""You were murdered by the assassins...""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""The earth lost it's last hope... """, 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation(scor , 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""GAME OVER""", 250, 100, WHITE, 10, DISPLAYSURF)
+    pygame.mixer.music.stop()
+    sys.exit()
+    exit()
+    
+def trump_rises():
+    WINDOW_WIDTH = 500
+    WINDOW_HEIGHT = 200
+    
+    pygame.init()
+    DISPLAYSURF = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+
+    pygame.mixer.music.load("WW3music.mp3")
+    pygame.mixer.music.set_volume(0.5)
+    pygame.mixer.music.play(-1)
+        
+    def main():
+        while True:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    sys.exit()
+    
+    display_text_animation("""You destroy all the assassins with Krav Maga Netanhayu taught you""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""The Kremlin blows up...""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""You are the last hope of Russia now...""", 250, 100, WHITE, 10, DISPLAYSURF)
+
+    china_war()
+    exit()
+    
+def china_war():
+    WINDOW_WIDTH = 500
+    WINDOW_HEIGHT = 200
+    
+    pygame.init()
+    DISPLAYSURF = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+
+    pygame.mixer.music.load("WW3music.mp3")
+    pygame.mixer.music.set_volume(0.5)
+    pygame.mixer.music.play(-1)
+        
+    def main():
+        while True:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    sys.exit()
+    
+    display_text_animation("""A video has surfaced...""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""Chinese President Xi Jinping has declared war!!""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""Your constant interference in other countries has caused this...""", 250, 100, WHITE, 10, DISPLAYSURF)
+
+    two_options("Choose the path forward..."
+            , 470, "Undercover Agent", trump_solo, "Fire with Fire", china_attack)
+    
+    pygame.mixer.music.stop()
+    exit()
+
+def china_attack():
+    WINDOW_WIDTH = 500
+    WINDOW_HEIGHT = 200
+    
+    pygame.init()
+    DISPLAYSURF = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+
+    pygame.mixer.music.load("WW3music.mp3")
+    pygame.mixer.music.set_volume(0.5)
+    pygame.mixer.music.play(-1)
+        
+    def main():
+        while True:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    sys.exit()
+
+    display_text_animation("""You receive intel of your armies being destroyed...""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""by fiendish armies which feel no pain...""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""there is now only one option, will you make the choice??""", 250, 100, WHITE, 10, DISPLAYSURF)
+
+    two_options("Choose the path forward..."
+            , 470, "Investigate", trump_investigate, "Nuclear Attack", china_nuclear)
+    
+    pygame.mixer.music.stop()
+    exit()
+
+def china_nuclear():
+    WINDOW_WIDTH = 500
+    WINDOW_HEIGHT = 200
+    
+    pygame.init()
+    DISPLAYSURF = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+
+    pygame.mixer.music.load("WW3music.mp3")
+    pygame.mixer.music.set_volume(0.5)
+    pygame.mixer.music.play(-1)
+        
+    def main():
+        while True:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    sys.exit()
+
+    display_text_animation("""The reptilians have invaded this far...""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""you must use the last option...""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation(""" give up your life, blow up russia and all of asia!!!""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""Answer the next problem to succeed""", 250, 100, WHITE, 10, DISPLAYSURF)
+    pygame.mixer.music.stop()
+    
+    qn_temp_no_opt("Nuclear attack (050 pts)", 230, 
+            """1,150,000 people stand in a circle. One of them is an undercover agent. There is a sword in 
+            the hand of the 1st person, he kills the 2nd person and passes on the sword to the third, 
+            who kills the fourth and gives the sword to the 5th, this goes on until one person is left. 
+            At what position does the spy stand to survive?""", 10, "0", nuclear_succeed, nuclear_fail,"800x350", 0, 0, 50)
+    exit()
+
+def nuclear_succeed():
+    WINDOW_WIDTH = 500
+    WINDOW_HEIGHT = 200
+    
+    pygame.init()
+    DISPLAYSURF = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+
+    pygame.mixer.music.load("WW3music.mp3")
+    pygame.mixer.music.set_volume(0.5)
+    pygame.mixer.music.play(-1)
+        
+    def main():
+        while True:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    sys.exit()
+    
+    scor = "Your score is " + str(score)
+    score_file = open("score.txt", "at")
+    score_file.write("\nRussia Path Score: " + str(score))
+    score_file.close()
+    score_log = open("ww3_log.txt", "at")
+    score_log.write("\n+---------------------------------russia path fin-------------------------------------------\n")
+    score_log.close()
+
+    display_text_animation("""Praises of your sacrifise are forever sung!!""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""You die but rescue humanity""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation(scor , 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""You Win!""", 250, 100, WHITE, 10, DISPLAYSURF)
+    pygame.mixer.music.stop()
+    sys.exit()
+    
+def nuclear_fail():
+    WINDOW_WIDTH = 500
+    WINDOW_HEIGHT = 200
+    
+    pygame.init()
+    DISPLAYSURF = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+
+    pygame.mixer.music.load("WW3music.mp3")
+    pygame.mixer.music.set_volume(0.5)
+    pygame.mixer.music.play(-1)
+        
+    def main():
+        while True:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    sys.exit()
+    
+    scor = "Your score is " + str(score)
+    score_file = open("score.txt", "at")
+    score_file.write("\nRussia Path Score: " + str(score))
+    score_file.close()
+    score_log = open("ww3_log.txt", "at")
+    score_log.write("\n+---------------------------------russia path fin-------------------------------------------\n")
+    score_log.close()
+
+    display_text_animation("""Your efforts go in vain...""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""You have failed...""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation(scor , 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""GAME OVER""", 250, 100, WHITE, 10, DISPLAYSURF)
+    pygame.mixer.music.stop()
+    sys.exit()
+    
+def trump_investigate():
+    WINDOW_WIDTH = 500
+    WINDOW_HEIGHT = 200
+    
+    pygame.init()
+    DISPLAYSURF = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+
+    pygame.mixer.music.load("WW3music.mp3")
+    pygame.mixer.music.set_volume(0.5)
+    pygame.mixer.music.play(-1)
+        
+    def main():
+        while True:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    sys.exit()
+
+    display_text_animation("""You send your spies to find the cause of your losses""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""Answer the next problem to continue""", 250, 100, WHITE, 10, DISPLAYSURF)
+    pygame.mixer.music.stop()
+    
+    qn_temp("Investigation (050 pts)", 230, 
+            """1,150,000 people stand in a circle. One of them is an undercover agent. There is a sword in 
+            the hand of the 1st person, he kills the 2nd person and passes on the sword to the third, 
+            who kills the fourth and gives the sword to the 5th, this goes on until one person is left. 
+            At what position does the spy stand to survive?""", 10, "0", shock_truth, default_wrong,"800x350", 0, 0, 50)
+    exit()
+
+def shock_truth():
+    WINDOW_WIDTH = 500
+    WINDOW_HEIGHT = 200
+    
+    pygame.init()
+    DISPLAYSURF = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+
+    pygame.mixer.music.load("WW3music.mp3")
+    pygame.mixer.music.set_volume(0.5)
+    pygame.mixer.music.play(-1)
+        
+    def main():
+        while True:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    sys.exit()
+
+    display_text_animation("""You receive reports of rituals to strange gods and sermon...""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""which brainwash the masses into brainless husks ready for war""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""there is only one option""", 250, 100, WHITE, 10, DISPLAYSURF)
+    pygame.mixer.music.stop()
+    china_nuclear()
+    exit()
+    
+def trump_solo():
+    WINDOW_WIDTH = 500
+    WINDOW_HEIGHT = 200
+    
+    pygame.init()
+    DISPLAYSURF = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+
+    pygame.mixer.music.load("WW3music.mp3")
+    pygame.mixer.music.set_volume(0.5)
+    pygame.mixer.music.play(-1)
+        
+    def main():
+        while True:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    sys.exit()
+    
+    display_text_animation("""Walking through rural china, you pass...""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""empty towns and armies of dazed peasants led by snakelike men""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""Rumors of the Forbidden City resound in the air... """, 250, 100, WHITE, 10, DISPLAYSURF)
+    pygame.mixer.music.stop()
+    
+    two_options("Fight a Combat/visit the Forbidden City"
+            , 470, "Combat", trump_combat, "Visit", the_forbidden_city)
+    
+    exit()
+
+def trump_combat():
+    WINDOW_WIDTH = 500
+    WINDOW_HEIGHT = 200
+    
+    pygame.init()
+    DISPLAYSURF = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+
+    pygame.mixer.music.load("WW3music.mp3")
+    pygame.mixer.music.set_volume(0.5)
+    pygame.mixer.music.play(-1)
+        
+    def main():
+        while True:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    sys.exit()
+
+    display_text_animation("""Answer the question that follows, to win the combat...""", 250, 100, WHITE, 10, DISPLAYSURF)
+    pygame.mixer.music.stop()
+    
+    qn_temp_no_opt("Trump Power!! (050 pts)", 230, 
+            """1,150,000 people stand in a circle. One of them is an undercover agent. There is a sword in 
+            the hand of the 1st person, he kills the 2nd person and passes on the sword to the third, 
+            who kills the fourth and gives the sword to the 5th, this goes on until one person is left. 
+            At what position does the spy stand to survive?""", 10, "0", one_man_army, combat_death,"800x350", 0, 0, 50)
+    exit()
+
+def combat_death():
+    WINDOW_WIDTH = 500
+    WINDOW_HEIGHT = 200
+    
+    pygame.init()
+    DISPLAYSURF = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+
+    pygame.mixer.music.load("WW3music.mp3")
+    pygame.mixer.music.set_volume(0.5)
+    pygame.mixer.music.play(-1)
+        
+    def main():
+        while True:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    sys.exit()
+    
+    scor = "Your score is " + str(score)
+    score_file = open("score.txt", "at")
+    score_file.write("\nRussia Path Score: " + str(score))
+    score_file.close()
+    score_log = open("ww3_log.txt", "at")
+    score_log.write("\n+---------------------------------russia path fin-------------------------------------------\n")
+    score_log.close()
+
+    display_text_animation("""Hordes tear into your flesh...""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""You die....""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation(scor , 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""GAME OVER""", 250, 100, WHITE, 10, DISPLAYSURF)
+    pygame.mixer.music.stop()
+    sys.exit()
+
+def one_man_army():
+    WINDOW_WIDTH = 500
+    WINDOW_HEIGHT = 200
+    
+    pygame.init()
+    DISPLAYSURF = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+
+    pygame.mixer.music.load("WW3music.mp3")
+    pygame.mixer.music.set_volume(0.5)
+    pygame.mixer.music.play(-1)
+        
+    def main():
+        while True:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    sys.exit()
+
+    display_text_animation("""With your almost divine martial prowess...""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation(""" you manage to defeat them and find out that...""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""the inhuman chinese leadership has brainwashed the masses""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""this is a repltilian ploy for world domination!!!""", 250, 100, WHITE, 10, DISPLAYSURF)
+    pygame.mixer.music.stop()
+    
+    the_forbidden_city()
+    exit()
+    
+def the_forbidden_city():
+    WINDOW_WIDTH = 500
+    WINDOW_HEIGHT = 200
+    
+    pygame.init()
+    DISPLAYSURF = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+
+    pygame.mixer.music.load("WW3music.mp3")
+    pygame.mixer.music.set_volume(0.5)
+    pygame.mixer.music.play(-1)
+        
+    def main():
+        while True:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    sys.exit()
+
+    display_text_animation("""You infiltrate the forbidden city and see...""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""dead people and reptilian soldiers everywhere... """, 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""Fight your way into the inner Sanctum """, 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""Answer the next problem... """, 250, 100, WHITE, 10, DISPLAYSURF)
+    pygame.mixer.music.stop()
+    
+    qn_temp("The Forbidden City (050 pts)", 230, 
+            """1,150,000 people stand in a circle. One of them is an undercover agent. There is a sword in 
+            the hand of the 1st person, he kills the 2nd person and passes on the sword to the third, 
+            who kills the fourth and gives the sword to the 5th, this goes on until one person is left. 
+            At what position does the spy stand to survive?""", 10, "0", el_fin, default_wrong,"800x350", 0, 0, 50)
+
+    exit()
+    
+def el_fin():
+    WINDOW_WIDTH = 500
+    WINDOW_HEIGHT = 200
+    
+    pygame.init()
+    DISPLAYSURF = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+
+    pygame.mixer.music.load("WW3music.mp3")
+    pygame.mixer.music.set_volume(0.5)
+    pygame.mixer.music.play(-1)
+        
+    def main():
+        while True:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    sys.exit()
+
+    display_text_animation("""You enter the inner sanctum, a horrific sight awaits!!""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""Xi Jinping sheds his humanoid skin, and then his ursine skin!!""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""A half lizard abomination stands before you!!""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""ahhh Donald.. i knew you would come!!""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""answer the next question to fight him!!""", 250, 100, WHITE, 10, DISPLAYSURF)
+    pygame.mixer.music.stop()
+    
+    qn_temp_no_opt("Duel of the fates (050 pts)", 230, 
+            """1,150,000 people stand in a circle. One of them is an undercover agent. There is a sword in 
+            the hand of the 1st person, he kills the 2nd person and passes on the sword to the third, 
+            who kills the fourth and gives the sword to the 5th, this goes on until one person is left. 
+            At what position does the spy stand to survive?""", 10, "0", highlander, earth_destroyed,"800x350", 0, 0, 50)
+    exit()
+    
+def highlander():    
+    WINDOW_WIDTH = 500
+    WINDOW_HEIGHT = 200
+    
+    pygame.init()
+    DISPLAYSURF = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+
+    pygame.mixer.music.load("WW3music.mp3")
+    pygame.mixer.music.set_volume(0.5)
+    pygame.mixer.music.play(-1)
+        
+    def main():
+        while True:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    sys.exit()
+    
+    scor = "Your score is " + str(score)
+    score_file = open("score.txt", "at")
+    score_file.write("\nRussia Path Score: " + str(score))
+    score_file.close()
+    score_log = open("ww3_log.txt", "at")
+    score_log.write("\n+---------------------------------russia path fin-------------------------------------------\n")
+    score_log.close()
+
+    display_text_animation("""In a battle for the ages, you decapitate his head...""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""You've won, earth is saved, rejoice, Hero!""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation(scor , 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""YOU WIN!!""", 250, 100, WHITE, 10, DISPLAYSURF)
+    pygame.mixer.music.stop()
+    sys.exit()
+
+def earth_destroyed():
+    WINDOW_WIDTH = 500
+    WINDOW_HEIGHT = 200
+    
+    pygame.init()
+    DISPLAYSURF = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+
+    pygame.mixer.music.load("WW3music.mp3")
+    pygame.mixer.music.set_volume(0.5)
+    pygame.mixer.music.play(-1)
+        
+    def main():
+        while True:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    sys.exit()
+    
+    scor = "Your score is " + str(score)
+    score_file = open("score.txt", "at")
+    score_file.write("\nRussia Path Score: " + str(score))
+    score_file.close()
+    score_log = open("ww3_log.txt", "at")
+    score_log.write("\n+---------------------------------russia path fin-------------------------------------------\n")
+    score_log.close()
+
+    display_text_animation("""As you cut off Xi's head with your greatsword...""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""two more heads pop up and spew fire at you!!! """, 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""your outer skin burns off as Xi decapitates you...""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""the reptilian revolution succeeds...""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""Earth devolves into a wasteland.""", 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation(scor , 250, 100, WHITE, 10, DISPLAYSURF)
+    display_text_animation("""GAME OVER""", 250, 100, WHITE, 10, DISPLAYSURF)
+    pygame.mixer.music.stop()
+    sys.exit()
+    
+def dummy():
+    exit()
 #new fucntions go here temporarily
     
 
-    
