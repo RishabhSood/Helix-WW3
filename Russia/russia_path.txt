@@ -38,7 +38,7 @@ p_3_043::
 
 m_2_044::Winter War!::You have decide that the fire in your hearts can [Insert a reference here] brave the russian cold and ask for Nato Support for the same.
 p_3_045::Our Glorious Allies!::Convince Nato of your war being just!
-p_4_046::[INSANE PROBLEM, expected failure]
+#p_4_046::[INSANE PROBLEM, expected failure] - Not supposed to be there
 #Have it bypass call1
 
 m_3_047::No Comment::You must trudge on.. show the cowards you have for allies the truth in your heart [Replace with reference].
@@ -113,7 +113,7 @@ m_2_042 -> p_3_043;
 
 c_2_041 -> m_2_044;
 m_2_044 -> p_3_045;
-p_3_045 -> p_4_046;
+p_3_045 -> p_5_052;
 #Should really allow inline online comments,this is the point of bypass.
 
 m_3_047 -> p_4_048;
@@ -122,7 +122,6 @@ p_4_048 -> c_4_049;
 
 c_4_049 -> p_5_050;
 c_4_049 -> m_4_051;
-p_4_046 -> m_4_051;
 
 m_4_051 -> p_5_052;
 
