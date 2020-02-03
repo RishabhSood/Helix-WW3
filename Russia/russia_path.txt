@@ -93,7 +93,7 @@ m_8_079::::You receive reports of rituals to strange gods and sermon which brain
 p_8_080::The Nuclear Option::The reptilians have invaded this far, you must use the last option, give up your life, blow up russia and all of asia, for the future of the Earth!
 
 e_8_081::Sacrifice::You scarifice your life, russia.. and asia.. and are sung of till the end of humanity in the next reptilian revolution.
-e_8_082::Moron::You came this far and still failed.
+e_8_082::Not something the Jedi taught you::Alas, you lacked not in courage or foresight, but in knowledge.
 
 }
 
