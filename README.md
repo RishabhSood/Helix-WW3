@@ -9,6 +9,8 @@ effect the questions you'll face. Best of luck impersonating Trump!
 - run the following command:
 > python setup.py build
 
+> The_game folder contains all the files required to run the game, while the other two folders contain visualisation of the paths implemented.
+
 **Credits:**
 
 An idea by:
