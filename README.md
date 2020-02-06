@@ -19,7 +19,7 @@ An idea by:
 **Story Authored By:**
 
 > - Rajat 
-> - Tushar
+> - [Tushar](https://github.com/Sherlot)
 > - [Mihir](https://github.com/AulonSal)
 
 **Problem Selection and Reframing:**
