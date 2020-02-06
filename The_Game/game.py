@@ -7,12 +7,12 @@ Created on Thu Jan  9 21:02:57 2020
 
 # World War 3
 # A concept by Rishabh Sood and Ishan Malhotra
-# Coded by Rishabh Sood and Mihir
+# Coded by Rishabh Sood
 # Storyline by Mihir, Rajat and Tushar
 # A MadLads Production
 
 import pygame
-from function_lib import load
+from function_lib import userinfo
 
 #----------------------------------------------------------------------------------------------------------#
 #Game opening screen
@@ -72,10 +72,10 @@ while(dead==False):
             dead = True
 
     screen.blit(background_image, [0, 0])
-    largeText = pygame.font.Font('D:/myfonts/thefont.ttf',55)
+    largeText = pygame.font.Font('thefont.ttf',55)
     TextSurf, TextRect = text_objects("World War 3", largeText)
     TextRect.center = ((670),(70))
     screen.blit(TextSurf, TextRect)
-    button("ATTACK!",620,140,110,50,red,bright_red,load)
+    button("ATTACK!",620,140,110,50,red,bright_red,userinfo)
     pygame.display.flip()
     clock.tick(clock_tick_rate)
