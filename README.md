@@ -14,19 +14,19 @@ effect the questions you'll face. Best of luck impersonating Trump!
 **Credits:**
 
 An idea by:
-> - Rishabh Sood & Ishan Malhotra
+> - [Rishabh Sood](https://github.com/RishabhSood) & [Ishan Malhotra](https://github.com/Ishan0203)
 
-Story Authored By:
+**Story Authored By:**
 
-> - Rajat
+> - Rajat 
 > - Tushar
-> - Mihir
+> - [Mihir](https://github.com/AulonSal)
 
-Problem Selection and Reframing:
-> - Mihir
-> - Rishabh 
+**Problem Selection and Reframing:**
+> - [Mihir](https://github.com/AulonSal)
+> - [Rishabh](https://github.com/RishabhSood)
 
 
->Coded By Rishabh Sood
+>Coded By [Rishabh Sood](https://github.com/RishabhSood)
 
 >Team CCS
