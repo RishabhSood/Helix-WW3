@@ -18,7 +18,7 @@ An idea by:
 
 **Story Authored By:**
 
-> - Rajat 
+> - [Rajat](https://github.com/S101903562) 
 > - [Tushar](https://github.com/Sherlot)
 > - [Mihir](https://github.com/AulonSal)
 
