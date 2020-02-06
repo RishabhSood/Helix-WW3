@@ -14,7 +14,7 @@ effect the questions you'll face. Best of luck impersonating Trump!
 **Credits:**
 
 An idea by:
-> - Rishabh Sood & Ishan Stark
+> - Rishabh Sood & Ishan Malhotra
 
 Story Authored By:
 
