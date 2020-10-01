@@ -97,16 +97,3 @@ Welcome to Path Iran
 @Checkpoint Wire with Wire (100 pts), user score = 1250
 
 @Checkpoint War of the wizards (400 pts), user score = 1650
-
-+---------------------------------iran path fin-------------------------------------------
-
-------------------------------------------------------------------------------------------
-Welcome to Path Iran
-------------------------------------------------------------------------------------------
-
-
-@Checkpoint Somewhere in Iran (050 pts), user score = 50
-
-@Checkpoint Held Hostage... (300 pts), user score = 350
-
-@Checkpoint Secure their Network (800 pts), user score = 850
