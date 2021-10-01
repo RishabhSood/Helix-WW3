@@ -14,7 +14,7 @@ Q1. Title: Somewhere in Iran
 Q2. Function: iran()
 	Points: 300
 	Title: Held Hostage..
-	Content:  Some of your soldiers have been held hostage by Iran Military. To set them free, you need access to their database. The database is distributed amongst 21 servers. It is known that each server has the same password. However, you've already attempted access to 20/21 servers and been blocked. This is your last chance! Following information has been gathered from the previous attacks:
+	Content:  A few of your soldiers have been held hostage by Iran Military. To set them free, you need access to their database. The database is distributed amongst 21 servers. It is known that each server has the same password. However, you've already attempted access to 20/21 servers and been blocked. This is your last chance! Following information has been gathered from the previous attacks:
 
 
 	Password     CC
