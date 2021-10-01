@@ -8,7 +8,7 @@ Q1. Title: Somewhere in Iran
 	Content:  1,150,000 people stand in a circle. One of them is an undercover agent. There is a sword in 
               the hand of the 1st person, he kills the 2nd person and passes on the sword to the third, 
               who kills the fourth and gives the sword to the 5th, this goes on until one person is left. 
-              At what position must the spy stand to survive?
+              At what position should the spy stand to survive?
     Ans: 202849
 
 Q2. Function: iran()
