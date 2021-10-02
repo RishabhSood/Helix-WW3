@@ -68,7 +68,7 @@ Q4. Function: iran_solo_redwed()
     |11| 12 |13| 14 15
     ...
 
-    A set of three primes is called a prime triplet if one of the three primes has the other two as neighbours in the triangle. (Neighbors refers to top, below, left, right and diagonal ones, MAX 8).
+    A set of three prime numbers is called a prime triplet if one of the three primes has the other two as neighbours in the triangle. (Neighbors refers to top, below, left, right and diagonal ones, MAX 8).
     (|n| is a prime triplet member)
     We define S(n) as the sum of the primes in row n which are elements of any prime triplet.
     For example, S(5) = 24 and S(2) = 5.
