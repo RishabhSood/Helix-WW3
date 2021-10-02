@@ -1,3 +1,3 @@
-Team Name:Warriots.txt
-PLayer 1 Name:
-PLayer 2 Name:
+Team Name:Gideon
+PLayer 1 Name: Barry Allen
+PLayer 2 Name: Oliver Queen
