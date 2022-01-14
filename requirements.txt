@@ -1,0 +1,6 @@
+cx-Freeze==6.9
+cx-Logging==3.0
+importlib-metadata==4.10.0
+pygame==2.1.2
+tk==0.1.0
+zipp==3.7.0
